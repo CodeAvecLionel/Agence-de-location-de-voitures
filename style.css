@@ -1,0 +1,374 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2b3743;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #69c627;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #69c627;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #69c627;
+}
+
+.language-select {
+    margin-left: 25px;
+    padding: 8px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* section hero */
+
+.hero {
+    background-image: url(img/background.avif);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.search-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-form input, 
+.search-form select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #2b3743;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    color: #2b3743;
+    font-size: 34px;
+}
+
+.car-grid, 
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.car-card,
+.destination-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.car-card,:hover
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.car-card img,
+.destination-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    margin: 0 0 10px;
+    color: #2b3743;
+    font-size: 20px;
+}
+
+.card-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.card-info .price {
+    font-weight: bold;
+    color: #ff6600;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.faq-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #2b3743;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-answer {
+    color: #555;
+    /*  Masque la reponse par defaut */
+   display: none; 
+    padding: 10px;
+    border-left:3px solid #007BFF;
+    margin-top: 10px;
+}
+
+.faq-question:hover {
+    background-color: #e0e0e0;
+}
+
+.active + .faq-answer {
+    /* Affiche la reponse lorsque la question est active */
+    display: block; 
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.stars {
+    color: #ffd700;
+}
+
+footer {
+    background-color: #2b3743;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#vols-details,
+#trains-details,
+#hotels-details,
+#sejours-details {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.close-section {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.close-section:hover {
+    background-color: #2b3743;
+}
+
+
+#vols-details {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15pxx rgba(0,0,0,0.1);
+}
+.flight-search {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1;
+}
+
+.destination-card 
+.card-info 
+.ap {
+    color: #ff6600;
+}
+
+.vols-content h3 {
+    margin-bottom: 20px;
+    color: #2b3743;
+    font-size: 24px;
+}
+
+.destination-card  {
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.train-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.train-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.train-details {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.train-benefits {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.train-benefits ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.train-benefits li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.train-benefits li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #69c627;
+}

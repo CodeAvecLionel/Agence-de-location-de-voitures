@@ -1,0 +1,453 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AutoDev</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">AutoDev</div>
+            <div class="nav-links">
+                <a href="#" id="vols-link">Vols</a>
+                <a href="#" id="trains-link">Trains</a>
+                <a href="/trains" id="hotels-link">Hôtels</a>
+                <a href="/sejours" id="sejours-link">Séjours</a>
+                <a href="/voitures" class="active">Voitures</a>
+                <select class="language-select">
+                    <option>Fr</option>
+                    <option>En</option>
+                    <option>De</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Lieu de prise en charge">
+                    <input type="date" placeholder="Date de début">
+                    <input type="date" placeholder="Date de fin">
+                    <select>
+                        <option>Catégorie de véhicule</option>
+                        <option>Économique</option>
+                        <option>Compacte</option>
+                        <option>Berline</option>
+                        <option>SUV</option>
+                    </select>
+                    <button type="submit">RECHERCHER</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <h2 class="section-title">Véhicules populaires</h2>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="img/voiture1.jpg" alt="Renault " width="280" height="180">
+                    <div class="card-info">
+                        <h3>Renault Clio</h3>
+                        <p>Catégorie: Économique</p>
+                        <p>Transmission: Manuelle</p>
+                        <p class="price">À partir de 25€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture2.jpg" alt="Volkswagen" width="280" height="180">
+                    <div class="card-info">
+                        <h3>Volkswagen Golf</h3>
+                        <p>Catégorie: Compacte</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 35€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture3.jpg" alt="Peugeot " width="280" height="180">
+                    <div class="card-info">
+                        <h3>Peugeot 3008</h3>
+                        <p>Catégorie: SUV</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 45€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture4.jpg" alt="BMW Série" width="280" height="180">
+                    <div class="card-info">
+                        <h3>BMW Série 3</h3>
+                        <p>Catégorie: Berline</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 55€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture5.jpg" alt="BMW Série" width="280" height="180">
+                    <div class="card-info">
+                        <h3>BMW Série 3</h3>
+                        <p>Catégorie: Berline</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 55€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture6.jpg" alt="BMW Série" width="280" height="180">
+                    <div class="card-info">
+                        <h3>BMW Série 3</h3>
+                        <p>Catégorie: Berline</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 55€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture7.jpg" alt="BMW Série" width="280" height="180">
+                    <div class="card-info">
+                        <h3>BMW Série 3</h3>
+                        <p>Catégorie: Berline</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 55€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture8.jpg" alt="BMW Série" width="280" height="180">
+                    <div class="card-info">
+                        <h3>BMW Série 3</h3>
+                        <p>Catégorie: Berline</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 55€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture9.jpg" alt="BMW Série" width="280" height="180">
+                    <div class="card-info">
+                        <h3>BMW Série 3</h3>
+                        <p>Catégorie: Berline</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 55€/jour</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="img/voiture10.jpg" alt="BMW Série" width="280" height="180">
+                    <div class="card-info">
+                        <h3>BMW Série 3</h3>
+                        <p>Catégorie: Berline</p>
+                        <p>Transmission: Automatique</p>
+                        <p class="price">À partir de 55€/jour</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <h2 class="section-title">Destinations préférées</h2>
+            <div class="destination-grid">
+                <div class="destination-card">
+                    <img src="img/paris.jpg"  alt="Tour " width="280" height="180">
+                    <div class="card-info">
+                        <h3>Paris</h3>
+                        <p>Explorez la ville lumière</p>
+                        <p class="price">À partir de 30€/jour</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="img/nice.jpg" alt="Plage de Nice" width="280" height="180">
+                    <div class="card-info">
+                        <h3>Nice</h3>
+                        <p>Profitez de la Côte d'Azur</p>
+                        <p class="price">À partir de 35€/jour</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="img/lyon.jpg" alt="Vue sur Lyon" width="280" height="180">
+                    <div class="card-info">
+                        <h3>Lyon</h3>
+                        <p>Découvrez la capitale gastronomique</p>
+                        <p class="price">À partir de 28€/jour</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="img/marseille.jpg" alt="Port de Marseille" width="280" height="180">
+                    <div class="card-info">
+                        <h3>Marseille</h3>
+                        <p>Explorez la cité phocéenne</p>
+                        <p class="price">À partir de 32€/jour</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Quels documents sont nécessaires pour louer une voiture ?</div>
+                    <div class="faq-answer">Pour louer une voiture, vous aurez généralement besoin d'un permis de
+                        conduire valide, d'une carte d'identité ou d'un passeport, et d'une carte de crédit au nom du
+                        conducteur principal.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">L'assurance est-elle incluse dans le prix de la location ?</div>
+                    <div class="faq-answer">La plupart des tarifs incluent une assurance de base, mais des options
+                        supplémentaires peuvent être disponibles. Il est recommandé de vérifier les détails de la
+                        couverture avant de finaliser votre réservation.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Puis-je annuler ma réservation gratuitement ?</div>
+                    <div class="faq-answer">Les conditions d'annulation varient selon les loueurs et le type de tarif
+                        choisi. Beaucoup offrent une annulation gratuite jusqu'à 48 heures avant la prise en charge du
+                        véhicule.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <h2 class="section-title">Avis clients</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header"> <img src="img/profile1.jpg" alt="Photo" width="50" height="50">
+                        <div>
+                            <h4>Marie D.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Service excellent ! La voiture était propre et en parfait état. Je recommande vivement !"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"> <img src="img/profile2.jpg" alt="Photo" width="50" height="50">
+                        <div>
+                            <h4>Pierre L.</h4>
+                            <div class="stars">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p>"Très satisfait de ma location. Le processus était simple et rapide. Seul bémol, un peu d'attente
+                        à la prise en charge."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header"> <img src="img/profile1.jpg" alt="Photol" width="50" height="50">
+                        <div>
+                            <h4>Sophie M.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Expérience parfaite du début à la fin. Le personnel était très aimable et professionnel. Je
+                        n'hésiterai pas à réserver à nouveau !"</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vols-details" class="section-container" style="display:none ;">
+            <h2 class="section-title">Trouvez votre vol idéal</h2>
+            <div class="vols-content">
+                <form class="search-form flight-search">
+                    <input type="text" placeholder="Départ">
+                    <input type="text" placeholder="Destination">
+                    <input type="date" placeholder="Date de départ">
+                    <input type="date" placeholder="Date de retour">
+                    <select>
+                        <option>Nombre de passagers</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4+</option>
+                    </select>
+                    <button type="submit">Rechercher des vols</button>
+                </form>
+                <h3>Destinations populaires</h3>
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <img src="img/paris.jpg" alt="Tour Eiffel " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Paris</h3>
+                            <p class="ap">Vols à partir de 50€</p>
+                            <p class="flight-details">Durée moyenne: 1h30</p>
+                            <p class="flight-details">Compagnies: Air France, EasyJet</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/New York.jpg"
+                            alt="New York City" width="280" height="180">
+                        <div class="card-info">
+                            <h3>New York</h3>
+                            <p class="ap">Vols à partir de 400€</p>
+                            <p class="flight-details">Durée moyenne: 8h</p>
+                            <p class="flight-details">Compagnies: Air France, Delta</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Tokyo, Japon.jpg"  alt="Tokyo, Japon" width="280" height="180">
+                        <div class="card-info">
+                            <h3>Tokyo</h3>
+                            <p class="ap">Vols à partir de 600€</p>
+                            <p class="flight-details">Durée moyenne: 12h</p>
+                            <p class="flight-details">Compagnies: JAL, ANA</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Rome, Italie.jpg" alt="Rome, Italie" width="280" height="180">
+                        <div class="card-info">
+                            <h3>Rome</h3>
+                            <p  class="ap">Vols à partir de 80€</p>
+                            <p class="flight-details">Durée moyenne: 2h</p>
+                            <p class="flight-details">Compagnies: Alitalia, Ryanair</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="close-vols" class="close-section">Fermer</button>
+            </div>
+        </section>
+
+        <section id="trains-details" class="section-container" style="display: none;">
+            <h2 class="section-title">Voyagez en train avec AutoDev</h2>
+            <div class="trains-content">
+                <form class="search-form train-search">
+                    <input type="text" placeholder="Gare de départ">
+                    <input type="text" placeholder="Gare d'arrivée">
+                    <input type="date" placeholder="Date du voyage">
+                    <select>
+                        <option>Nombre de passagers</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4+</option>
+                    </select>
+                    <button type="submit">Rechercher des trains</button>
+                </form>
+                <h3>Destinations populaires en train</h3>
+                <div class="destination-grid">
+                    <div class="destination-card train-card">
+                        <img src="img/TGV à Paris.jpg" alt="TGV " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Paris - Lyon</h3>
+                            <p class="ap">À partir de 29€</p>
+                            <p class="train-details">Durée: 2h</p>
+                            <p class="train-details">Fréquence: Toutes les heures</p>
+                        </div>
+                    </div>
+                    <div class="destination-card train-card">
+                        <img src="img/Train en montagne.jpg" alt="Train " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Paris - Chamonix</h3>
+                            <p class="ap">À partir de 49€</p>
+                            <p class="train-details">Durée: 5h30</p>
+                            <p class="train-details">Fréquence: 3 fois par jour</p>
+                        </div>
+                    </div>
+                    <div class="destination-card train-card">
+                        <img src="img/Train traversant la campagne.jpg"  alt="Train " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Paris - Marseille</h3>
+                            <p class="ap">À partir de 39€</p>
+                            <p class="train-details">Durée: 3h30</p>
+                            <p class="train-details">Fréquence: Toutes les 2 heures</p>
+                        </div>
+                    </div>
+                    <div class="destination-card train-card">
+                        <img src="img/Gare de Nice.jpg" alt="Gare de Nice" width="280" height="180">
+                        <div class="card-info">
+                            <h3>Paris - Nice</h3>
+                            <p class="ap">À partir de 49€</p>
+                            <p class="train-details">Durée: 5h40</p>
+                            <p class="train-details">Fréquence: 5 fois par jour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="train-benefits">
+                    <h3>Pourquoi voyager en train ?</h3>
+                    <ul>
+                        <li>Écologique : Réduisez votre empreinte carbone</li>
+                        <li>Confortable : Plus d'espace et de liberté de mouvement</li>
+                        <li>Pratique : Arrivée en centre-ville</li>
+                        <li>Économique : Souvent moins cher que l'avion sur certaines distances</li>
+                    </ul>
+                </div>
+                <button id="close-trains" class="close-section">Fermer</button>
+            </div>
+        </section>
+
+        <section id="hotels-details" class="section-container" style="display: none;">
+            <h2 class="section-title">Détails des Hôtels</h2>
+            <div class="hotels-content">
+                <p>Découvrez nos hôtels recommandés pour votre séjour :</p>
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <img src="img/Hôtel à Paris.jpg"  alt="Hôtel " width="280" height="180">
+                        <div class="card-info">
+                            <h3 >Hôtel de Paris</h3>
+                            <p class="ap">À partir de 120€/nuit</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Hôtel à Nice.jpg" alt="Hôtel " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Hôtel de la Côte d'Azur</h3>
+                            <p class="ap">À partir de 150€/nuit</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Hôtel à Lyon.jpg" alt="Hôtel " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Hôtel Lyonnais</h3>
+                            <p class="ap">À partir de 100€/nuit</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Hôtel à Marseille.jpg" alt="Hôtel " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Hôtel de Marseille</h3>
+                            <p class="ap">À partir de 110€/nuit</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="close-section">Fermer</button>
+            </div>
+        </section>
+
+        <section id="sejours-details" class="section-container" style="display: none;">
+            <h2 class="section-title">Détails des Séjours</h2>
+            <div class="sejours-content">
+                <p>Découvrez nos séjours tout compris :</p>
+                <div class="destination-grid">
+                    <div class="destination-card">
+                        <img src="img/Séjour à Paris.jpg" alt="Séjour " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Paris 3 jours</h3>
+                            <p class="ap">À partir de 250€</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Séjour à Nice.jpg" alt="Séjour " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Nice 5 jours</h3>
+                            <p class="ap">À partir de 600€</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Séjour à Lyon.jpg" alt="Séjour " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Lyon 4 jours</h3>
+                            <p class="ap">À partir de 400€</p>
+                        </div>
+                    </div>
+                    <div class="destination-card">
+                        <img src="img/Séjour à Marseille.jpg"  alt="Séjour " width="280" height="180">
+                        <div class="card-info">
+                            <h3>Marseille 3 jours</h3>
+                            <p class="ap">À partir de 330€</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="close-section">Fermer</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2024 AutoDev. Tous droits réservés.</p>
+        <p>Comparateur de location de voiture</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
